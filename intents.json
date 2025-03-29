@@ -1,0 +1,264 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Is anyone there?",
+        "Greetings"
+      ],
+      "responses": [
+        "Ayubowan! Welcome to Sri Lanka Travel Guide!",
+        "Hello! Ready to explore Sri Lanka?",
+        "Hi there! How can I help with your Sri Lankan adventure?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Signing off", "Exit"],
+      "responses": [
+        "Have a safe journey!",
+        "Until next time - may your travels be blessed!",
+        "Goodbye! Come back for more Sri Lankan wonders!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Appreciate it"],
+      "responses": [
+        "Happy to help you explore Sri Lanka!",
+        "It's my pleasure to share about our paradise island!",
+        "You're welcome - enjoy your Ceylon adventure!"
+      ]
+    },
+    {
+      "tag": "attractions",
+      "patterns": [
+        "Top places to visit",
+        "Must-see locations",
+        "Best tourist spots",
+        "Popular destinations",
+        "What should I see?",
+        "Main attractions"
+      ],
+      "responses": [
+        "Sri Lanka's treasures include: Sigiriya Rock Fortress, Temple of the Tooth Relic (Kandy), Galle Fort, Yala National Park, Adam's Peak, Nuwara Eliya tea country, Anuradhapura ancient city, and Mirissa beaches.",
+        "Must-visit sites: Cultural Triangle sites, Ella's Nine Arch Bridge, Udawalawe Elephant Sanctuary, Polonnaruwa ruins, and Bentota beaches."
+      ]
+    },
+    {
+      "tag": "cultural_tips",
+      "patterns": [
+        "Cultural etiquette",
+        "Dress code advice",
+        "Local customs",
+        "What should I know about traditions?",
+        "Cultural norms"
+      ],
+      "responses": [
+        "When visiting temples: Cover shoulders/knees, remove shoes/hats. Avoid touching Buddha statues. Receive items with right hand. Always ask permission before taking photos of people.",
+        "Sri Lankans appreciate modest dress. Nudity is illegal. Public displays of affection frowned upon. Remove shoes in homes."
+      ]
+    },
+    {
+      "tag": "best_time",
+      "patterns": [
+        "When to visit?",
+        "Best season",
+        "Weather conditions",
+        "Monsoon season",
+        "Dry season months"
+      ],
+      "responses": [
+        "West/South coasts best Dec-Apr. East coast best May-Sep. Hill Country good year-round. Yala monsoon May-Aug, Maha monsoon Oct-Jan.",
+        "Ideal time: January to April for beaches. July-August for festivals. November for wildlife watching."
+      ]
+    },
+    {
+      "tag": "cuisine",
+      "patterns": [
+        "Local foods to try",
+        "Traditional dishes",
+        "Must-eat Sri Lankan food",
+        "Famous cuisine",
+        "What's the national dish?"
+      ],
+      "responses": [
+        "Must-try: Rice & curry, hoppers (appa), kottu roti, string hoppers, lamprais, pol sambol. Desserts: wattalappam, kalu dodol. Drink: Ceylon tea, king coconut water!",
+        "Sri Lankan specialties: Jaffna crab curry, ambul thiyal (sour fish), wood apple juice. Street food: isso wade (shrimp fritters), rotti."
+      ]
+    },
+    {
+      "tag": "transport",
+      "patterns": [
+        "How to get around?",
+        "Transport options",
+        "Best way to travel",
+        "Public transportation",
+        "Tuk-tuk fares"
+      ],
+      "responses": [
+        "Options: trains (scenic routes), buses (cheap but crowded), private drivers (₹5000-8000/day). Tuk-tuks for short trips - negotiate first! Train recommended for Colombo-Kandy-Ella route.",
+        "Use PickMe app for taxis. Trains best booked in advance. Domestic flights available to Jaffna/Batticaloa."
+      ]
+    },
+    {
+      "tag": "wildlife",
+      "patterns": [
+        "Where to see elephants?",
+        "Best safari locations",
+        "Leopard spotting",
+        "National parks",
+        "Birdwatching spots"
+      ],
+      "responses": [
+        "Yala (leopards), Udawalawe (elephants), Minneriya (The Gathering), Sinharaja (birds), Wilpattu (sloth bears). Best safaris at dawn.",
+        "Top wildlife: Udawalawe Elephant Transit Home, Kumana Bird Sanctuary, Gal Oya National Park boat safaris."
+      ]
+    },
+    {
+      "tag": "accommodation",
+      "patterns": [
+        "Where to stay?",
+        "Best areas for hotels",
+        "Eco-friendly stays",
+        "Budget accommodation",
+        "Luxury resorts"
+      ],
+      "responses": [
+        "Options: Colombo luxury hotels, Galle heritage mansions, Kandy guesthouses, Ella eco-lodges, Arugam Bay surf camps, Wilpattu glamping.",
+        "Unique stays: Tea estate bungalows, rainforest eco-villas, converted Dutch warehouses in Galle Fort."
+      ]
+    },
+    {
+      "tag": "festivals",
+      "patterns": [
+        "Major cultural events",
+        "Festival dates",
+        "Religious celebrations",
+        "Best time for festivals",
+        "Traditional ceremonies"
+      ],
+      "responses": [
+        "Key festivals: Esala Perahera (July/Aug - Kandy), Sinhala New Year (April), Vesak (May), Deepavali (Oct/Nov), Christmas (Coastal areas).",
+        "Don't miss: Kandy Perahera's elephant procession, Jaffna Nallur Festival, Dondra Perahera."
+      ]
+    },
+    {
+      "tag": "hiking",
+      "patterns": [
+        "Best hikes",
+        "Trekking routes",
+        "Mountain climbing",
+        "Walking trails",
+        "Adam's Peak climb"
+      ],
+      "responses": [
+        "Top treks: Adam's Peak pilgrimage (Dec-May), Knuckles Range, Ella Rock, Horton Plains to World's End, Sinharaja Rainforest trails.",
+        "Hiking essentials: Start early, carry water, wear layers. Guides recommended for Knuckles/Mountain regions."
+      ]
+    },
+    {
+      "tag": "beaches",
+      "patterns": [
+        "Best beaches",
+        "Where to surf?",
+        "Snorkeling spots",
+        "Family-friendly beaches",
+        "Secluded beaches"
+      ],
+      "responses": [
+        "West: Bentota (family), Hikkaduwa (diving). East: Arugam Bay (surfing), Pasikuda (calm waters). South: Mirissa (whale watching), Tangalle (secluded).",
+        "Top beach activities: Whale watching (Mirissa), snorkeling (Pigeon Island), surfing (Midigama), turtle watching (Rekawa)."
+      ]
+    },
+    {
+      "tag": "history",
+      "patterns": [
+        "Historical sites",
+        "Ancient kingdoms",
+        "Colonial history",
+        "UNESCO sites",
+        "Archaeological sites"
+      ],
+      "responses": [
+        "8 UNESCO Sites: Sigiriya, Polonnaruwa, Anuradhapura, Galle Fort, Sinharaja Forest, Kandy Sacred City, Dambulla Cave Temple, Central Highlands.",
+        "History trail: Anuradhapura's sacred Bodhi tree, Polonnaruwa's stone temples, Jaffna Fort, Colombo National Museum."
+      ]
+    },
+    {
+      "tag": "visa",
+      "patterns": [
+        "Visa requirements",
+        "ETA application",
+        "Entry documents",
+        "Visa on arrival",
+        "How to get visa?"
+      ],
+      "responses": [
+        "Most need Electronic Travel Authorization (ETA) - apply online 3 days before. 30-day tourist visa ≈ $50. Extensions possible at Immigration Dept.",
+        "Check eta.gov.lk. Requirements: Passport valid 6mo, return ticket, sufficient funds. Visa-free for some countries."
+      ]
+    },
+    {
+      "tag": "safety",
+      "patterns": [
+        "Is Sri Lanka safe?",
+        "Travel warnings",
+        "Health precautions",
+        "Emergency numbers",
+        "Vaccinations needed"
+      ],
+      "responses": [
+        "Generally safe. Avoid political gatherings. Use registered taxis. Emergency: 119 (police), 110 (ambulance). Recommended vaccines: Hep A, Typhoid.",
+        "Health: Drink bottled water, use mosquito repellent. Beware strong currents at beaches. Keep valuables secure."
+      ]
+    },
+    {
+      "tag": "shopping",
+      "patterns": [
+        "What to buy?",
+        "Souvenirs",
+        "Local products",
+        "Markets",
+        "Best shopping areas"
+      ],
+      "responses": [
+        "Popular items: Ceylon tea, spices, handloom textiles, wooden masks, silver jewelry, batik clothing, lacquerware. Visit: Pettah Market, Laksala Govt. stores.",
+        "Best buys: Dilmah tea, blue sapphires (certified), Ayurveda products, traditional drums. Bargain in markets!"
+      ]
+    },
+    {
+      "tag": "language",
+      "patterns": [
+        "Common phrases",
+        "Local language",
+        "English spoken?",
+        "How to say hello",
+        "Tamil phrases"
+      ],
+      "responses": [
+        "Sinhala: Ayubowan (hello), Istuti (thank you). Tamil: Vanakkam (hello), Nandri (thanks). English widely spoken in tourist areas.",
+        "Helpful phrases: 'Kohomada?' (How are you?), 'Mehe kiyada?' (How much?), 'Mata therumak nehe' (I don't understand)."
+      ]
+    },
+    {
+      "tag": "itinerary",
+      "patterns": [
+        "7-day itinerary",
+        "Trip planning",
+        "Sample routes",
+        "How to plan my trip?",
+        "First-time visit plan"
+      ],
+      "responses": [
+        "Classic 10-day route: Colombo → Sigiriya → Kandy → Nuwara Eliya → Ella → Yala → Galle → Departure. Adjust for beaches/wildlife focus.",
+        "1 week: Cultural Triangle (3d), Hill Country (2d), South Coast (2d). 2 weeks: Add East Coast & Jaffna."
+      ]
+    }
+  ]
+}
