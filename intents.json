@@ -259,6 +259,230 @@
         "Classic 10-day route: Colombo → Sigiriya → Kandy → Nuwara Eliya → Ella → Yala → Galle → Departure. Adjust for beaches/wildlife focus.",
         "1 week: Cultural Triangle (3d), Hill Country (2d), South Coast (2d). 2 weeks: Add East Coast & Jaffna."
       ]
+    },
+    {
+      "tag": "adventure",
+      "patterns": [
+        "Adventure activities",
+        "Thrilling experiences",
+        "Extreme sports",
+        "White water rafting",
+        "Where to go rock climbing?"
+      ],
+      "responses": [
+        "Adventure options: Kitulgala white-water rafting, Belihul Oya abseiling, Kandy to Ella bike trail, Arugam Bay kitesurfing, Knuckles Range mountain trekking.",
+        "Try: Diving at Great Basses Reef, surfing at Weligama, hot air ballooning in Dambulla, zip-lining in Sinharaja Rainforest."
+      ]
+    },
+    {
+      "tag": "regional_guides",
+      "patterns": [
+        "Guide to Central Province",
+        "What's special about Eastern Province?",
+        "Northern Sri Lanka attractions",
+        "Uva Province highlights",
+        "Best of Southern Province"
+      ],
+      "responses": [
+        "Central: Tea plantations, Horton Plains, Adam's Peak. Eastern: Trinco beaches, Batticaloa lagoon. Northern: Jaffna culture, Nainativu Island. Southern: Galle architecture, Mirissa whales.",
+        "Provincial specialties: Sabaragamuwa (gem mines), North Central (ancient cities), Western (Colombo nightlife)"
+      ]
+    },
+    {
+      "tag": "budget",
+      "patterns": [
+        "Budget travel tips",
+        "Cheap accommodation",
+        "Low-cost meals",
+        "Free attractions",
+        "Backpacking Sri Lanka"
+      ],
+      "responses": [
+        "Budget tips: Use local buses (₹50-300), eat at kades (local eateries ₹200-500), stay in guesthouses (₹1500-3000/night), visit free temples.",
+        "Free attractions: Gangaramaya Temple, Galle Fort walls, Jaffna Public Library, Kandy Lake, Colombo Lotus Tower observation deck."
+      ]
+    },
+    {
+      "tag": "family",
+      "patterns": [
+        "Family-friendly activities",
+        "Traveling with kids",
+        "Child-friendly beaches",
+        "Educational tours",
+        "Baby facilities"
+      ],
+      "responses": [
+        "For families: Pinnawala Elephant Orphanage, Dehiwala Zoo, Kandy Cultural Show, Bentota Beach, Millennium Park Adventure Zone.",
+        "Child-safe: Brief Garden (Bentota), Turtle Hatcheries (Kosgoda), Spice Gardens (Matale), Railway Museum (Kadugannawa)"
+      ]
+    },
+    {
+      "tag": "nightlife",
+      "patterns": [
+        "Best bars",
+        "Nightclubs",
+        "Evening entertainment",
+        "Pub crawls",
+        "Casinos"
+      ],
+      "responses": [
+        "Nightlife hotspots: Colombo's Park Street Mews, Galle Face Hotel Verandah, Unawatuna Beach parties, Hikkaduwa reggae bars. Casino: Bally's in Colombo.",
+        "Cultural nights: Kandy Dance Shows, Galle Fort jazz nights, Negombo seafood dinners with fire dances."
+      ]
+    },
+    {
+      "tag": "eco_tourism",
+      "patterns": [
+        "Eco-friendly tours",
+        "Sustainable stays",
+        "Green tourism",
+        "Community-based tourism",
+        "Conservation projects"
+      ],
+      "responses": [
+        "Eco options: Rainforest Ecolodge (Sinharaja), Jetwing Kaduruketha (organic farm stay), Rukgala Wilderness Retreat. Volunteer with turtle conservation.",
+        "Sustainable experiences: Village walks in Dambana (Vedda community), mangrove planting in Puttalam, ethical elephant encounters at Millennium Elephant Foundation."
+      ]
+    },
+    {
+      "tag": "religious",
+      "patterns": [
+        "Important temples",
+        "Buddhist pilgrimage sites",
+        "Hindu kovils",
+        "Christian churches",
+        "Mosques"
+      ],
+      "responses": [
+        "Sacred sites: Temple of the Tooth (Kandy), Kataragama Devalaya, Nagadeepa Purana Vihara, St. Anthony's Shrine Kochchikade, Jami Ul-Alfar Mosque (Colombo).",
+        "Pilgrimage route: Adam's Peak → Sri Pada → Muthiyangana Raja Maha Viharaya → Kataragama"
+      ]
+    },
+    {
+      "tag": "packages",
+      "patterns": [
+        "Tour packages",
+        "All-inclusive deals",
+        "Custom tours",
+        "Luxury travel planners",
+        "Group tours"
+      ],
+      "responses": [
+        "Popular packages: 7D Cultural Triangle Tour (₹35k-1L), 10D Round Island (₹60k-2L). Reputable operators: Jetwing Travels, Aitken Spence, Eco Team.",
+        "Specialized tours: Ayurveda Retreats (Beruwela), Photography Safaris (Yala), Tea Trail Walks (Nuwara Eliya)"
+      ]
+    },
+    {
+      "tag": "photography",
+      "patterns": [
+        "Best photo spots",
+        "Instagram locations",
+        "Sunrise viewpoints",
+        "Landscape photography",
+        "Drone rules"
+      ],
+      "responses": [
+        "Top photo ops: Nine Arch Bridge (Ella), Little Adam's Peak sunrise, St. Clair's Falls, Jaffna Dutch Fort silhouette, Mirissa Fishermen on stilts.",
+        "Drone rules: Need Civil Aviation Authority permit. Banned near military sites. Max altitude 400ft."
+      ]
+    },
+    {
+      "tag": "health",
+      "patterns": [
+        "Ayurveda retreats",
+        "Spa resorts",
+        "Yoga centers",
+        "Meditation retreats",
+        "Wellness tourism"
+      ],
+      "responses": [
+        "Wellness centers: Siddhalepa Ayurveda Resort, Barberyn Reef Ayurveda, Santani Wellness Resort, Sen Wellness Sanctuary.",
+        "Yoga/Meditation: Parampara (Unawatuna), Nilaveli Beach yoga, Knuckles Mountain retreats, Buddhist temple meditation programs."
+      ]
+    },
+    {
+      "tag": "transport_details",
+      "patterns": [
+        "Train timetable",
+        "Bus routes",
+        "Domestic flights",
+        "Car rental",
+        "Expressway tolls"
+      ],
+      "responses": [
+        "Key trains: Colombo-Kandy-Ella (7h), Coastal Line (Colombo-Matara 3h). Check railways.gov.lk. Expressway toll: Colombo-Katunayake ₹800.",
+        "Car hire: Need valid IDP. Rates from ₹4000/day. Helitours flights: Colombo-Jaffna (1h, ₹15k)"
+      ]
+    },
+    {
+      "tag": "events",
+      "patterns": [
+        "Upcoming events",
+        "Music festivals",
+        "Food festivals",
+        "Cultural exhibitions",
+        "Sports events"
+      ],
+      "responses": [
+        "2024 Calendar: Galle Literary Fest (Jan), Jaffna Music Fest (Mar), Poson Poya (Jun), Deepavali Light Fest (Nov), Colombo Marathon (Oct)",
+        "Annual Events: Kandy Esala Perahera (Aug), Galle Cricket Matches, Negombo Fishery Festival (Jul)"
+      ]
+    },
+    {
+      "tag": "solo_travel",
+      "patterns": [
+        "Solo female travel",
+        "Safety for solo travelers",
+        "Meetup groups",
+        "Hostels for solo",
+        "Single supplements"
+      ],
+      "responses": [
+        "Solo tips: Join walking tours in Colombo, stay in female-only dorms (Ella/Hikkaduwa), use women-only train compartments. Avoid night buses.",
+        "Safe areas: Galle Fort, Kandy City, Nuwara Eliya. Join meetups via Colombo Expats Facebook group."
+      ]
+    },
+    {
+      "tag": "disabled",
+      "patterns": [
+        "Wheelchair access",
+        "Accessible tourism",
+        "Mobility challenges",
+        "Special needs travel",
+        "Handicapped facilities"
+      ],
+      "responses": [
+        "Accessible sites: Gangaramaya Temple ramp, Galle Fort (paved paths), Pinnawala Elephant Orphanage. Specialized tours: Enable Lanka Tours.",
+        "Wheelchair-friendly hotels: Cinnamon Grand Colombo, Heritance Kandalama, Jetwing Lighthouse Galle"
+      ]
+    },
+    {
+      "tag": "volunteer",
+      "patterns": [
+        "Volunteering opportunities",
+        "Community projects",
+        "Teaching English",
+        "Wildlife conservation",
+        "Disaster relief"
+      ],
+      "responses": [
+        "Volunteer programs: Sea turtle conservation (Kosgoda), Tsunami rebuilding (East Coast), English teaching (rural schools), Elephant dung paper projects.",
+        "Reputable orgs: Sri Lanka Volunteer, Projects Abroad, VOICA. Minimum commitment 2 weeks."
+      ]
+    },
+    {
+      "tag": "emergency",
+      "patterns": [
+        "Lost passport",
+        "Medical emergency",
+        "Police assistance",
+        "Embassy contacts",
+        "Tourist helpline"
+      ],
+      "responses": [
+        "Emergency contacts: Tourist Police (1912), Ambulance (110). Embassy numbers: USA (+94-112-440000), India (+94-112-580800).",
+        "Hospitals: Asiri Surgical (Colombo), Lanka Hospitals (Cardiff City). 24/7 Pharmacy: Healthguard (Colombo Fort)"
+      ]
     }
   ]
 }
