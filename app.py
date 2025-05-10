@@ -5,11 +5,11 @@ import json
 import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
+from db_utils import insert_message
 
 app = Flask(__name__)
 CORS(app)
 
-# Load model and data
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json', 'r') as json_data:
@@ -17,7 +17,6 @@ with open('intents.json', 'r') as json_data:
 
 FILE = "data.pth"
 data = torch.load(FILE)
-
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]
 output_size = data["output_size"]
@@ -28,8 +27,6 @@ model_state = data["model_state"]
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
-
-bot_name = "Sam"
 
 def get_response(msg):
     sentence = tokenize(msg)
@@ -43,8 +40,8 @@ def get_response(msg):
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    
-    if prob.item() > 0.75:
+
+    if prob.item() > 0.6:
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 return random.choice(intent['responses'])
@@ -56,7 +53,8 @@ def chat():
     user_input = data.get('message', '')
     if not user_input:
         return jsonify({'error': 'No message provided'}), 400
-    
+
+    insert_message(user_input)
     response = get_response(user_input)
     return jsonify({'bot': response})
 

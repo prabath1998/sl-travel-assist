@@ -1,17 +1,27 @@
 import nltk
 import numpy as np
+from spellchecker import SpellChecker
 
 from nltk.stem.porter import PorterStemmer
+spell = SpellChecker()
 
 nltk.download('punkt')
 
 stemmer = PorterStemmer()
 
+def autocorrect_tokens(tokens):
+    return [spell.correction(word) for word in tokens]
+
 def tokenize(sentence):
-    return nltk.word_tokenize(sentence)
+    words = nltk.word_tokenize(sentence)
+    corrected_words = autocorrect_tokens(words)
+    return corrected_words
 
 def stem(word):
-    return stemmer.stem(word.lower())
+    if isinstance(word, str):
+        return stemmer.stem(word.lower())
+    return ""
+
 
 def bag_of_words(tokenized_sentence, words):
     """

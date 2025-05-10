@@ -19,7 +19,13 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye", "Signing off", "Exit"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Signing off",
+        "Exit"
+      ],
       "responses": [
         "Have a safe journey!",
         "Until next time - may your travels be blessed!",
@@ -28,7 +34,12 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Appreciate it"],
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Appreciate it"
+      ],
       "responses": [
         "Happy to help you explore Sri Lanka!",
         "It's my pleasure to share about our paradise island!",
@@ -102,7 +113,7 @@
         "Tuk-tuk fares"
       ],
       "responses": [
-        "Options: trains (scenic routes), buses (cheap but crowded), private drivers (₹5000-8000/day). Tuk-tuks for short trips - negotiate first! Train recommended for Colombo-Kandy-Ella route.",
+        "Options: trains (scenic routes), buses (cheap but crowded), private drivers (\u20b95000-8000/day). Tuk-tuks for short trips - negotiate first! Train recommended for Colombo-Kandy-Ella route.",
         "Use PickMe app for taxis. Trains best booked in advance. Domestic flights available to Jaffna/Batticaloa."
       ]
     },
@@ -200,7 +211,7 @@
         "How to get visa?"
       ],
       "responses": [
-        "Most need Electronic Travel Authorization (ETA) - apply online 3 days before. 30-day tourist visa ≈ $50. Extensions possible at Immigration Dept.",
+        "Most need Electronic Travel Authorization (ETA) - apply online 3 days before. 30-day tourist visa \u2248 $50. Extensions possible at Immigration Dept.",
         "Check eta.gov.lk. Requirements: Passport valid 6mo, return ticket, sufficient funds. Visa-free for some countries."
       ]
     },
@@ -256,7 +267,7 @@
         "First-time visit plan"
       ],
       "responses": [
-        "Classic 10-day route: Colombo → Sigiriya → Kandy → Nuwara Eliya → Ella → Yala → Galle → Departure. Adjust for beaches/wildlife focus.",
+        "Classic 10-day route: Colombo \u2192 Sigiriya \u2192 Kandy \u2192 Nuwara Eliya \u2192 Ella \u2192 Yala \u2192 Galle \u2192 Departure. Adjust for beaches/wildlife focus.",
         "1 week: Cultural Triangle (3d), Hill Country (2d), South Coast (2d). 2 weeks: Add East Coast & Jaffna."
       ]
     },
@@ -298,7 +309,7 @@
         "Backpacking Sri Lanka"
       ],
       "responses": [
-        "Budget tips: Use local buses (₹50-300), eat at kades (local eateries ₹200-500), stay in guesthouses (₹1500-3000/night), visit free temples.",
+        "Budget tips: Use local buses (\u20b950-300), eat at kades (local eateries \u20b9200-500), stay in guesthouses (\u20b91500-3000/night), visit free temples.",
         "Free attractions: Gangaramaya Temple, Galle Fort walls, Jaffna Public Library, Kandy Lake, Colombo Lotus Tower observation deck."
       ]
     },
@@ -355,7 +366,7 @@
       ],
       "responses": [
         "Sacred sites: Temple of the Tooth (Kandy), Kataragama Devalaya, Nagadeepa Purana Vihara, St. Anthony's Shrine Kochchikade, Jami Ul-Alfar Mosque (Colombo).",
-        "Pilgrimage route: Adam's Peak → Sri Pada → Muthiyangana Raja Maha Viharaya → Kataragama"
+        "Pilgrimage route: Adam's Peak \u2192 Sri Pada \u2192 Muthiyangana Raja Maha Viharaya \u2192 Kataragama"
       ]
     },
     {
@@ -368,7 +379,7 @@
         "Group tours"
       ],
       "responses": [
-        "Popular packages: 7D Cultural Triangle Tour (₹35k-1L), 10D Round Island (₹60k-2L). Reputable operators: Jetwing Travels, Aitken Spence, Eco Team.",
+        "Popular packages: 7D Cultural Triangle Tour (\u20b935k-1L), 10D Round Island (\u20b960k-2L). Reputable operators: Jetwing Travels, Aitken Spence, Eco Team.",
         "Specialized tours: Ayurveda Retreats (Beruwela), Photography Safaris (Yala), Tea Trail Walks (Nuwara Eliya)"
       ]
     },
@@ -410,8 +421,8 @@
         "Expressway tolls"
       ],
       "responses": [
-        "Key trains: Colombo-Kandy-Ella (7h), Coastal Line (Colombo-Matara 3h). Check railways.gov.lk. Expressway toll: Colombo-Katunayake ₹800.",
-        "Car hire: Need valid IDP. Rates from ₹4000/day. Helitours flights: Colombo-Jaffna (1h, ₹15k)"
+        "Key trains: Colombo-Kandy-Ella (7h), Coastal Line (Colombo-Matara 3h). Check railways.gov.lk. Expressway toll: Colombo-Katunayake \u20b9800.",
+        "Car hire: Need valid IDP. Rates from \u20b94000/day. Helitours flights: Colombo-Jaffna (1h, \u20b915k)"
       ]
     },
     {
@@ -482,6 +493,73 @@
       "responses": [
         "Emergency contacts: Tourist Police (1912), Ambulance (110). Embassy numbers: USA (+94-112-440000), India (+94-112-580800).",
         "Hospitals: Asiri Surgical (Colombo), Lanka Hospitals (Cardiff City). 24/7 Pharmacy: Healthguard (Colombo Fort)"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [
+        "Hello there",
+        "what are the destinations",
+        "what are the destinations",
+        "what are the destinations",
+        "what are the destinations",
+        "what are the destinations",
+        "what are the deinations",
+        "wt are the deinations",
+        "wt are the deinations",
+        "wt are the deinations",
+        "wt are the deinations",
+        "wt are the deinations",
+        "wt are the deinations",
+        "wt are the deinations",
+        "wt are the deinations",
+        "wt are the deinations",
+        "what the heck",
+        "what the ",
+        "what the ",
+        "what the ",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "what are the foods",
+        "foods",
+        "foods",
+        "places",
+        "local foods",
+        "Traditional dishes",
+        "Famous cuisine",
+        "What's the national dish?",
+        "What's the national dish?",
+        "What's the national dish?",
+        "What's the national dish?",
+        "Wha the ntional dish?",
+        "Wha the ntional dish?",
+        "Wha the ntional dish?",
+        "Wha the ntional dish?",
+        "Wha the ntional dish?",
+        " the ntional dish?",
+        " the ntional dish?",
+        " the ntional dish?",
+        " destinations in srilanka?",
+        " desiations in slanka?",
+        " desiations in slanka?",
+        " desiations in srlanka?",
+        " desiations in srlanka?",
+        " destiations in srlanka?",
+        "what about transport",
+        "what about transport",
+        "transport",
+        "how about the transport"
+      ],
+      "responses": [
+        "I do not understand yet."
       ]
     }
   ]
