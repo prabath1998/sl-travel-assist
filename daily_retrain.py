@@ -1,31 +1,37 @@
 import sqlite3
 import json
-from nltk_utils import tokenize
 
-DB_NAME = "messages.db"
+DB_NAME = "feedback.db"
 
 with open("intents.json", "r") as f:
     intents = json.load(f)
 
 conn = sqlite3.connect(DB_NAME)
 cursor = conn.cursor()
-cursor.execute("SELECT id, message_text FROM messages WHERE is_trained = 0")
-new_messages = cursor.fetchall()
+cursor.execute("SELECT id, user_message, intent_tag FROM feedback WHERE helpful = 1 AND is_trained = 0")
+new_feedback = cursor.fetchall()
 
-if not new_messages:
-    print("No new messages to train.")
+if not new_feedback:
+    print("No new feedback to train.")
 else:
-    print(f"Adding {len(new_messages)} new messages to intents...")
-    default_tag = "unknown"
-    exists = any(i['tag'] == default_tag for i in intents['intents'])
-    if not exists:
-        intents['intents'].append({"tag": default_tag, "patterns": [], "responses": ["I do not understand yet."]})
+    print(f"Adding {len(new_feedback)} feedback messages to intents...")
+    for feedback_id, msg, tag in new_feedback:
+        if tag and tag != "unknown":
+            for intent in intents['intents']:
+                if intent['tag'] == tag:
+                    intent['patterns'].append(msg)
+                    break
+            else:
+                intents['intents'].append({"tag": tag, "patterns": [msg], "responses": ["I do not understand yet."]})
+        else:
+            for intent in intents['intents']:
+                if intent['tag'] == "unknown":
+                    intent['patterns'].append(msg)
+                    break
+            else:
+                intents['intents'].append({"tag": "unknown", "patterns": [msg], "responses": ["I do not understand yet."]})
 
-    for msg_id, msg in new_messages:
-        for intent in intents['intents']:
-            if intent['tag'] == default_tag:
-                intent['patterns'].append(msg)
-        cursor.execute("UPDATE messages SET is_trained = 1 WHERE id = ?", (msg_id,))
+        cursor.execute("UPDATE feedback SET is_trained = 1 WHERE id = ?", (feedback_id,))
 
     with open("intents.json", "w") as f:
         json.dump(intents, f, indent=2)

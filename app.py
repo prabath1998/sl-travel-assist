@@ -5,7 +5,7 @@ import json
 import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
-from db_utils import insert_message
+from feedback_utils import insert_feedback
 
 app = Flask(__name__)
 CORS(app)
@@ -44,8 +44,8 @@ def get_response(msg):
     if prob.item() > 0.6:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                return random.choice(intent['responses'])
-    return "I do not understand..."
+                return random.choice(intent['responses']), tag
+    return "I do not understand...", "unknown"
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -54,9 +54,23 @@ def chat():
     if not user_input:
         return jsonify({'error': 'No message provided'}), 400
 
-    insert_message(user_input)
-    response = get_response(user_input)
-    return jsonify({'bot': response})
+    response, tag = get_response(user_input)
+    return jsonify({'bot': response, 'tag': tag})
+
+@app.route('/feedback', methods=['POST'])
+def feedback():
+    data = request.get_json()
+    user_message = data.get("user_message", "")
+    bot_reply = data.get("bot_reply", "")
+    helpful = data.get("helpful", False)
+    intent_tag = data.get("intent_tag", None)
+
+    if user_message and bot_reply:
+        insert_feedback(user_message, bot_reply, helpful, intent_tag)
+
+    return jsonify({'status': 'Feedback received'})
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
