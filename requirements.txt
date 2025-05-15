@@ -4,3 +4,5 @@ torch
 flask
 flask-cors
 pyspellchecker
+gunicorn
+punkt_tab
